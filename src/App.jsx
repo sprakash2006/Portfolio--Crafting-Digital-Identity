@@ -1,11 +1,13 @@
-import { useState } from 'react'
-import './App.css'
-import Header from "./components/header"
+import { useState } from 'react';
+import './App.css';
+import Header from "./components/header";
+import Home from "./pages/intro.jsx";
 
 function App() {
   return (
-    <div className="header finisher-header pt-[20vw]">
+    <div>
       <Header />
+      <Home />
     </div>
   )
 }
