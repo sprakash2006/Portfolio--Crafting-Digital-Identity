@@ -1,1 +1,10 @@
 className="header finisher-header
+
+
+background-color:#020817;
+
+
+#280A3E
+
+background:#080010;
+
