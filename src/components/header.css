@@ -1,0 +1,35 @@
+.header-div {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:60vw;
+    border-radius:40px;
+    gap:12.5vw;
+    margin-left:20vw;
+    margin-top:1vw;
+    backdrop-filter: blur(12px) saturate(160%);
+    -webkit-backdrop-filter: blur(12px) saturate(160%);
+    background-color: rgba(255, 255, 255, 0.012);
+    border-radius: 16px;
+    border: 1px solid #7F00FF;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: inset 10px 10px 50px rgba(0, 0, 0, 0.477),
+    inset -10px -10px 50px rgba(0, 0, 0, 0.503);
+  }
+
+.title {
+  font-family: "Manufacturing Consent", system-ui;
+  font-weight: 100;
+  font-style: normal;
+  font-size:3vw;
+  font-weight: 100;
+}
+
+.navigation {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:1.55em;
+}
