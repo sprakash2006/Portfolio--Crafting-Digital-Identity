@@ -29,18 +29,16 @@ export default function ProgrammingLanguagesCard() {
       skills: ['C', 'C++', 'Javascript', 'Python',]
     },
     {
-      category: 'Frontend Development',
-      icon: '⚛️',
-      skills: ['React', 'Tailwind CSS', 'HTML5', 'CSS', 'GSAP']
+      category: 'Relevent Courses',
+      icon: '🗂️',
+      skills: ['Data Structure', 'Algorithms', 'OOPS', 'DBMS']
     },
     {
-      category: 'Backend Development',
-      icon: '</>',
-      skills: ['Node.js', 'Express.js', 'REST APIs']
-    }
-  ];
-
-  const skillsData2 = [
+      category: 'Web Development',
+      icon: '⚛️',
+      skills: ['React', 'Tailwind CSS', 'HTML5', 'CSS', 'GSAP', 'Node.js', 'Express.js', 'REST APIs']
+    },
+    
     {
       category: 'Databases',
       icon: '🗂️',
@@ -49,7 +47,7 @@ export default function ProgrammingLanguagesCard() {
     {
       category: 'Tools & Technologies',
       icon: '⚙️',
-      skills: ['Version Control', 'NPM', 'Postman', 'Axios', 'Vite']
+      skills: ['Version Control', 'NPM', 'Postman', 'VS Code', 'Vite']
     },
     {
       category: 'Design',
@@ -58,38 +56,18 @@ export default function ProgrammingLanguagesCard() {
     }
   ];
 
+  const skillsData2 = [
+
+  ];
+
   const skillsData3 = [
-    {
-      category: 'Relevent Courses',
-      icon: '🗂️',
-      skills: ['Data Structure', 'Algorithms', 'OOPS', 'DBMS']
-    }
+    
   ];
 
   return (
     <div className="lang-dashboard-container">
       <div className="lang-skills-grid-container">
         {skillsData1.map((skillCategory) => (
-          <SkillCard
-            key={skillCategory.category}
-            category={skillCategory.category}
-            icon={skillCategory.icon}
-            skills={skillCategory.skills}
-          />
-        ))}
-      </div>
-      <div className="lang-skills-grid-container">
-        {skillsData2.map((skillCategory) => (
-          <SkillCard
-            key={skillCategory.category}
-            category={skillCategory.category}
-            icon={skillCategory.icon}
-            skills={skillCategory.skills}
-          />
-        ))}
-      </div>
-      <div className="lang-skills-grid-container">
-        {skillsData3.map((skillCategory) => (
           <SkillCard
             key={skillCategory.category}
             category={skillCategory.category}
