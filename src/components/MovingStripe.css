@@ -6,7 +6,7 @@ body { margin: 0;}
   overflow: hidden;
   white-space: nowrap;
   background-color:#7961f4;
-  rotate:-4deg;
+  rotate:-3deg;
 
 
 }
@@ -16,6 +16,11 @@ body { margin: 0;}
   animation: marquee 40s linear infinite;
 }
 .item-collection-1 {
+  position: relative;
+  left: 0%;
+  animation: swap 40s linear infinite;
+}
+.item-collection-2 {
   position: relative;
   left: 0%;
   animation: swap 40s linear infinite;
