@@ -77,6 +77,7 @@
 /* Show overlay on hover */
 .certificate-item:hover .credential-overlay {
   opacity: 1;
+  
 }
 
 /* Credential button styling */
