@@ -148,15 +148,15 @@
 
 .lang-dashboard-container {
     padding:0 12vw;
-    padding-top:5vw;
-    padding-bottom:5vw;
+    padding-top:1.5vw;
+    padding-bottom:7vw;
 }
 .lang-skills-grid-container {
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:4vw;
-    padding-top:3vw;
+    gap:2vw;
+    padding-top:2vw;
 }
 
 

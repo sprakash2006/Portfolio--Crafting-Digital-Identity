@@ -1,52 +1,121 @@
-.certificates-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-items: center;
-    align-items: center;
-    column-gap:2.5vw;
-    row-gap:3vw;
-    padding-right:5vw;
-    padding-left:5vw;
-    padding-top:3vw;
+.certificates-container-wrap {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.certificate-image {
-    overflow: hidden;
-    height:16vw;
-    border-radius:3px;
-    transition: transform 0.4s ease;
+
+/* Animation pause when hovering */
+.certificates-container-wrap.paused .certificates-main-container {
+  animation-play-state: paused;
+}
+
+.certificates-main-container {
+  display: flex;
+  animation: marquee 30s linear infinite;
+  width: max-content;
+  gap: 3vw;
+  will-change: transform;
+}
+
+.certificates-container1, .certificates-container2 {
+  display: flex;
+  gap: 3vw;
+  padding-top: 3vw;
+  flex-shrink: 0;
 }
 
 .certificate-item {
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start;
-    align-items: center;
-    border:1px solid #5fcdfa;
-    background-color:#073c5175;
-    backdrop-filter: blur(10px);
-    border-radius:5.5px;
-    width:27vw;
-    padding-bottom:10px;
-    padding-top:0.34vw;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5.5px;
+  width: 28.6vw;
+  padding-top: 0.5vw;
+  flex-shrink: 0;
+  position: relative;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
+
+/* Certificate hover effect - scale and blur */
 .certificate-item:hover {
-    scale:1.1
+  transform: scale(1.02);
 }
-.certificate-item-header {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:1vw;
-    padding-bottom:0.5vw;
-    padding-right:2vw;
+
+.certificate-item:hover .certificate-image {
+  filter: blur(2px);
 }
-.prov-logo {
-    height:40px;
+
+/* Image container for overlay positioning */
+.certificate-image-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.certificate-provider {
+
+.certificate-image {
+  height: 21vw;
+  border-radius: 3px;
+  transition: filter 0.3s ease;
+}
+
+/* Credential overlay */
+.credential-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+/* Show overlay on hover */
+.certificate-item:hover .credential-overlay {
+  opacity: 1;
+}
+
+/* Credential button styling */
+.credential-button {
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  color: rgb(0, 0, 0);
   font-family: "Libertinus Serif", serif;
+  font-size: 1.1em;
   font-weight: 600;
-  font-style: normal;
-  color:white;
-  font-size:1.5em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.credential-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Arrow styling */
+.arrow {
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+  rotate:-10deg;
+}
+
+.credential-button:hover .arrow {
+  transform: translateX(4px);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 1vw));
+  }
 }
