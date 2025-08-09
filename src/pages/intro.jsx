@@ -1,21 +1,38 @@
 import React from 'react';
-import myPhoto from "../assets/my-photo.png";
+import './intro.css'
+import linkedin from "../assets/linkedin-logo.png";
+import github from "../assets/github-logo.png";
+import leetcode from "../assets/leetcode-logo.png";
+import cv from "../assets/cloud-download.png";
+import RotatingCuboid from "../components/RotatingCuboid";
+import cvPDF from '../assets/CVPrakashSwami.pdf';
 
-const intro = () => {
+
+const Intro = () => {
   return (
-    <div id='home' className='top-35 header finisher-header h-[46vw] w-[100vw] relative left-5'>
-      <div className='flex flex-col justify-center items-center gap-5'>
-        <div>
-            <img className='w-[85%]' src={myPhoto} alt="" />
+    <div id='home' className=' header finisher-header h-[46vw] w-[100vw] relative main-home-content'>
+      <div className='flex flex-col justify-center items-center'>
+        <div className="homepage-title">
+            <p className='bg-[#ff0033] w-[13vw] home-name -rotate-8 text-1xl scale-200 text-center'>PRAKASH SWAMI</p>
+            <RotatingCuboid />
         </div>
-        <div className="relative right-5">
-            <p className='bg-[#ff0033] w-[13vw] home-name text-1xl -rotate-8 scale-140 text-center'>PRAKASH SWAMI</p>
-            <p className='bg-[#6c0016] relative right-4 top-2 w-[10vw] home-name text-[12px] -rotate-8 scale-110 text-center'>WEB DEVELOPER</p>
+        <div className='sociallogo-div flex gap-5'>
+          <a href="https://www.linkedin.com/in/prakash-swami" target="_blank" rel="noopener noreferrer">
+            <img className='socialLogo' src={linkedin} alt="linkedin-logo" />
+          </a>
+          <a href="https://leetcode.com/u/sprakash_001" target="_blank" rel="noopener noreferrer">
+            <img className='socialLogo' src={leetcode} alt="leetcode-logo" />
+          </a>
+          <a href="https://github.com/sprakash2006" target="_blank" rel="noopener noreferrer">
+            <img className='socialLogo' src={github} alt="github-logo" />
+          </a>
+          <a href={cvPDF} target="_blank" rel="noopener noreferrer">
+            <img className='socialLogo' src={cv} alt="pdf-logo" />
+          </a>
         </div>
-        
       </div>
     </div>
   )
 }
 
-export default intro;
+export default Intro;
