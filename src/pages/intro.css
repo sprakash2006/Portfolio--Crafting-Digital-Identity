@@ -1,0 +1,44 @@
+.main-home-content {
+  padding-top:125px;
+  padding-left:25px;
+  height:50vw;
+}
+
+.home-myImage {
+  clip-path:circle(50% at 50% 50%)
+
+}
+
+.home-name {
+    padding:10px 10px;
+    font-family: "Playwrite AU QLD", cursive;
+    font-optical-sizing: auto;
+    font-weight:700;
+    color:white;
+    font-style: normal;
+    margin-left:1.5vw;
+}
+
+.homepage-title {
+  padding-top:10vw;
+  margin-right:2.5vw;
+}
+
+.sociallogo-div {
+  margin-top:8vw;
+}
+
+.socialLogo {
+    height:3vw;
+    border:1px solid #ffffff9e;
+    border-radius:50px;
+    padding:5px;
+    cursor:pointer;
+    background-color: black;
+}
+
+.socialLogo:hover {
+  box-shadow:3px 3px 20px #ff00ff9e,
+  -3px -3px 20px #ff00ff9e;
+  border:none;
+}
