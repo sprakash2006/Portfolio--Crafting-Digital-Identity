@@ -1,14 +1,59 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Header from "./components/header";
+import StarfieldAnimation from '../src/components/StarfieldAnimation'
 import Home from "./pages/intro.jsx";
+import devider1 from '../src/assets/deviders/intersecting-waves-split.svg'
+import About from '../src/pages/aboutme'
+import Skills from '../src/pages/skills'
+import Certificate from '../src/pages/certificate'
+import Project from '../src/pages/Project'
+import Loader from '../src/components/Loader'
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading time (e.g., fetching API)
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="loading-container">
+        <Loader />
+      </div>
+    );
+  }
+
   return (
-    <div>
-      <Header />
-      <Home />
-    </div>
+    <>
+      <div className='web-hero-page'>
+        <div className='home-bg'>
+          <StarfieldAnimation />
+        </div>
+        <div>
+          <Header />
+          <Home />
+        </div>
+      </div>
+
+      <div>
+        <About />
+      </div>
+      <div>
+        <Skills />
+      </div>
+      <div>
+        <Certificate />
+      </div>
+      <div>
+        <Project />
+      </div>
+    </>
   )
 }
 
