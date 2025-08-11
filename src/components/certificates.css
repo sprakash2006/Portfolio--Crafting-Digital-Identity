@@ -63,6 +63,16 @@
   transition: filter 0.3s ease;
 }
 
+@media (max-width: 450px) {
+  .certificate-image {
+    height: 40vw;
+  }
+  .certificate-item {
+    border-radius: 20px;
+    width: 60vw;
+  }
+}
+
 /* Credential overlay */
 .credential-overlay {
   position: absolute;

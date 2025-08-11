@@ -5,13 +5,14 @@ const Header = () => {
   return (
     <div className='header-div'>
       <div>
-        <p className="title text-amber-400">Prakash Swami</p>
+        <p className="title text-amber-400">Prakss!</p>
       </div>
-      <div className="flex justify-center items-center gap-[1.5vw] navigation">
+      <div className="flex justify-center items-center navigation">
         <a className="text-amber-50" href="#home">Home</a>
         <a className="text-amber-50" href="#intro">Intro</a>
-        <a className="text-amber-50" href="#skills">Stack</a>
-        <a className="text-amber-50" href="#projects">Projects</a>
+        <a className="text-amber-50" href="#stack">Stack</a>
+        <a className="text-amber-50" href="#conquest">Conquest</a>
+        <a className="text-amber-50" href="#project">Projects</a>
         <a className="text-amber-50" href="#contact">Contact</a>
       </div>
 

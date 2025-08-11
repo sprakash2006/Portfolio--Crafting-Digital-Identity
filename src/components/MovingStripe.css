@@ -6,8 +6,9 @@ body { margin: 0;}
   overflow: hidden;
   white-space: nowrap;
   background-color:#7961f4;
-  rotate:-3deg;
-
+  position:absolute;
+  bottom:1.5vw;
+  rotate:-2.5deg;
 
 }
 .ticker {
@@ -33,6 +34,22 @@ body { margin: 0;}
   color:#000000;   
   font-weight:800;
   letter-spacing:0.5px;
+}
+
+
+@media (max-width: 450px) {
+  .ticker-wrap {
+    rotate:-10deg;
+    z-index:3;
+    margin-top:7vw;
+
+
+  }
+  .item {
+    font-size: 0.75rem;
+    letter-spacing:4px;
+  }
+
 }
 
 
@@ -92,4 +109,12 @@ body { margin: 0;}
     rgba(0, 0, 0, 0) 80%,
     rgba(0, 0, 0,0.9) 100%
   );
+}
+
+@media (max-width: 450px) {
+  .star {
+      font-size:1.5vw;
+  }
+
+
 }
