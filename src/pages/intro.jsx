@@ -10,11 +10,15 @@ import cvPDF from '../assets/CVPrakashSwami.pdf';
 
 const Intro = () => {
   return (
-    <div id='home' className=' header finisher-header h-[46vw] w-[100vw] relative main-home-content'>
-      <div className='flex flex-col justify-center items-center'>
-        <div className="homepage-title">
+    <div className='h-[46vw] w-[100vw] relative main-home-content'>
+      <div className='flex flex-col justify-center items-center main-home-content-left'>
+        {/* <div className="homepage-title">
             <p className='bg-[#ff0033] w-[13vw] home-name -rotate-8 text-1xl scale-200 text-center'>PRAKASH SWAMI</p>
             <RotatingCuboid />
+        </div> */}
+        <div className='intro-name-title'>
+          <p>PRAKASH SWAMI</p>
+          <p>"Versatile creator of innovative, efficient, and user-focused digital solutions across web and beyond."</p>
         </div>
         <div className='sociallogo-div flex gap-5'>
           <a href="https://www.linkedin.com/in/prakash-swami" target="_blank" rel="noopener noreferrer">

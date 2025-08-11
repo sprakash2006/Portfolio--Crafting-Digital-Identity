@@ -1,0 +1,41 @@
+.certificate-page {
+    background-color:#031922;
+    padding-top:4vw;
+    padding-bottom:5vw;
+    border-bottom:30px dotted #000000;
+}
+.certificate-header {
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items:center;
+}
+.certificate-section-title {
+     font-family: "Manufacturing Consent", system-ui;
+     font-weight: 200;
+     font-style: normal;
+     font-size: 5vw;
+     color:#D2AF26;
+}
+.certificate-section-description {
+      font-family: "Zain", sans-serif;
+      font-weight: 200;
+      font-style:italic;
+      color:white;
+      font-size:1.35vw;
+      padding-top:0.2vw;
+}
+
+@media (max-width: 450px) {
+     .certificate-page {
+     padding-top:6vw;
+     padding-bottom:10vw;
+     border-bottom:15px dotted #080010;
+     }
+     .certificate-section-title {
+          font-size: 10vw;
+     }
+     .certificate-section-description {
+          font-size:1.7vw;
+     }
+}

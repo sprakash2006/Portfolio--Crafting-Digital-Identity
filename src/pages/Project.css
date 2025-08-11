@@ -1,0 +1,55 @@
+.project-page-heading {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-page {
+  column-count: 3;
+  gap:0.5rem;
+  padding: 3rem 7rem;
+  position: relative;
+  padding-bottom:12.25vw;
+}
+
+
+.project-page-title {
+  color:white;
+  font-family: "Playwrite HU", cursive;
+  font-optical-sizing: auto;
+  font-weight:300;
+  padding-top:5%;
+  font-style: normal;
+  font-size:8rem;
+  text-align: center;
+  padding-top:8vw;
+  padding-bottom:3vw;
+}
+.project-page-subheading {
+  color:rgb(213, 255, 47);
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size:1.25rem;
+  position:absolute;
+  bottom:2vw;
+  right:33vw;
+}
+
+@media (max-width: 450px) {
+  .project-page {
+    column-count: 1;
+    gap:1rem;
+    padding:4rem 4rem;
+    
+  }
+  .project-page-title {
+    font-size:4rem;
+    padding-top:12vw;
+    padding-bottom:3vw;
+  }
+  .project-page-subheading {
+    font-size:0.65rem;
+    right:15vw;
+  }
+}
