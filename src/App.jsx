@@ -8,7 +8,9 @@ import About from '../src/pages/aboutme'
 import Skills from '../src/pages/skills'
 import Certificate from '../src/pages/certificate'
 import Project from '../src/pages/Project'
+import Contact from '../src/pages/contact'
 import Loader from '../src/components/Loader'
+
 
 function App() {
 
@@ -35,23 +37,26 @@ function App() {
         <div className='home-bg'>
           <StarfieldAnimation />
         </div>
-        <div>
+        <div id='home'>
           <Header />
           <Home />
         </div>
       </div>
 
-      <div>
+      <div id='intro'>
         <About />
       </div>
-      <div>
+      <div id='stack'>
         <Skills />
       </div>
       <div>
         <Certificate />
       </div>
-      <div>
+      <div id='project'>
         <Project />
+      </div>
+      <div id='contact'>
+        <Contact />
       </div>
     </>
   )
