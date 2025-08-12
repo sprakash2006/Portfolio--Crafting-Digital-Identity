@@ -1,7 +1,7 @@
 import React from "react";
 import "./MacCodeCard.css";
 
-const MacCodeCard = () => {
+const MacCodeCardcomp = () => {
   return (
     <div className="card">
       <div className="mac-header">
@@ -28,4 +28,4 @@ const MacCodeCard = () => {
   );
 };
 
-export default MacCodeCard;
+export default MacCodeCardcomp;

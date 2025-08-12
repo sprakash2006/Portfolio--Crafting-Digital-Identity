@@ -90,4 +90,19 @@
 }
 
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .card {
+  width: 390px;
+  padding: 20px;
+  border-radius: 5px;
+  }
+  .code-editor {
+    height:40vw;
+  }
+  .card-title {
+    padding-left:5vw;
+  }
+  .mac-header {
+    padding-bottom:1vw;
+  }
+}

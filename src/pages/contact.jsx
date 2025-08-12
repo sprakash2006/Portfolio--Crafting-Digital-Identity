@@ -1,17 +1,21 @@
 import React from 'react'
 import './contact.css'
-import MacCodeCard from '../components/MacCodeCard'
+import MacCodeCardComp from '../components/MacCodeCardcomp'
+import MacCodeCardMob from '../components/MacCodeCardmob'
 import ContactAni from '../components/ContactAni'
+import useMediaQuery from '../Hooks/useMediaQuery';
 
 const Contact = () => {
+  const isMobile = useMediaQuery("(max-width: 391px)");
+
   return (
     <>
       <div className='contact-page'>
         <div className='profCard'>
-          <ContactAni />
+          {!isMobile && <ContactAni />}
         </div>
         <div className='conCard'>
-          <MacCodeCard />
+          {isMobile ? <MacCodeCardMob /> : <MacCodeCardComp />}
         </div>
       </div>
     </>
