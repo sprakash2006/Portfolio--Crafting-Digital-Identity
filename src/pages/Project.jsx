@@ -6,7 +6,7 @@ const Project = () => {
   return (
     <>
     <div>
-        <div className='project-page-heading'>
+        <div className='project-page-header'>
           <p className='project-page-title'>Portfolio</p>
           <p className='project-page-subheading'> Turning Ideas into Impact !</p>
         </div>

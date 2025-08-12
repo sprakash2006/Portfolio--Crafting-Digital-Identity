@@ -130,7 +130,7 @@
 
 @media (max-width: 450px) {
     .proj-card {
-        width: 100%;
+        width: 120%;
     }
     .proj-logo {
         width: 30px;
@@ -139,7 +139,7 @@
         margin-left:0.6rem;
     }
     .proj-title {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     .proj-description {
         font-size:0.9rem;
@@ -150,9 +150,10 @@
     .proj-skill-section {
         gap: 0.25rem;
         padding-left:0rem;
+        justify-content: flex-start;
+        align-items: center;
     }
     .proj-skill-capsule {
-        padding: 0.1rem 0.65rem;
         font-size: 0.675rem;
         display:flex;
         justify-content: center;

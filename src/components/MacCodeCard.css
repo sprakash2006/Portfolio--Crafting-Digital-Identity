@@ -88,3 +88,6 @@
   white-space: pre-wrap;
   display: block;
 }
+
+
+@media (max-width: 480px) {}

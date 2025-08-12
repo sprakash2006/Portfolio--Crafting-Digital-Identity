@@ -1,4 +1,4 @@
-.project-page-heading {
+.project-page-header {
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -41,15 +41,21 @@
     column-count: 1;
     gap:1rem;
     padding:4rem 4rem;
+    padding-bottom:7.5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
   }
   .project-page-title {
     font-size:4rem;
-    padding-top:12vw;
-    padding-bottom:3vw;
+    padding-top:18vw;
+    padding-bottom:2vw;
   }
   .project-page-subheading {
     font-size:0.65rem;
     right:15vw;
+    bottom:0;
   }
 }
