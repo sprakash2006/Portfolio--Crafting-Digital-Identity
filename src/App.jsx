@@ -10,11 +10,13 @@ import Certificate from '../src/pages/certificate'
 import Project from '../src/pages/Project'
 import Contact from '../src/pages/contact'
 import Loader from '../src/components/Loader'
+import MediaQuery from '../src/Hooks/useMediaQuery'
 
 
 function App() {
 
   const [loading, setLoading] = useState(true);
+  const isMobile = MediaQuery("(max-width: 390px)");
 
   useEffect(() => {
     // Simulate loading time (e.g., fetching API)
@@ -31,11 +33,14 @@ function App() {
     );
   }
 
+
+
+
   return (
     <>
       <div className='web-hero-page'>
         <div className='home-bg'>
-          <StarfieldAnimation />
+         {isMobile && <StarfieldAnimation />}
         </div>
         <div id='home'>
           <Header />

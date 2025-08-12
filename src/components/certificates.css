@@ -63,7 +63,7 @@
   transition: filter 0.3s ease;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 390px) {
   .certificate-image {
     height: 40vw;
   }

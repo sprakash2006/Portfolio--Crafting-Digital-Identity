@@ -26,7 +26,7 @@
       padding-top:0.2vw;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 390px) {
      .certificate-page {
      padding-top:6vw;
      padding-bottom:10vw;
