@@ -38,16 +38,18 @@ body { margin: 0;}
 
 
 @media (max-width: 450px) {
+
   .ticker-wrap {
-    rotate:-10deg;
+    rotate:-0.5deg;
     z-index:3;
-    margin-top:7vw;
-
-
+    margin-top:0;
   }
   .item {
     font-size: 0.75rem;
-    letter-spacing:4px;
+    letter-spacing:2px;
+  }
+  .star {
+    scale:1.5;
   }
 
 }

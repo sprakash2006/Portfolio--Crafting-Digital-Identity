@@ -25,14 +25,14 @@
 
 @media (max-width: 450px) {
   .skill-page {
-    padding-top:2.5vw;
     border-bottom:10px dashed #031922;
 
   }
   .skills-title {
-    font-size:8.5vw;
-    margin-left:25%;
-    margin-top:12%;
+    font-size:11vw;
+    margin-left:8%;
+    margin-top:10%;
+    padding-bottom:5vw;
 
   }
 }
