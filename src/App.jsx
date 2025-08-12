@@ -13,7 +13,7 @@ import useMediaQuery from '../src/Hooks/useMediaQuery';
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const isMobile = useMediaQuery("(max-width: 390px)"); // ✅ only true for <390px
+  const isMobile = useMediaQuery("(max-width: 391px)"); // ✅ only true for <390px
 
   useEffect(() => {
     setTimeout(() => {

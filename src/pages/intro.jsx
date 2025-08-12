@@ -6,34 +6,28 @@ import leetcode from "../assets/leetcode-logo.png";
 import cv from "../assets/cloud-download.png";
 import RotatingCuboid from "../components/RotatingCuboid";
 import cvPDF from '../assets/CVPrakashSwami.pdf';
-import myphoto from '../assets/profP.jpg'
+
 
 const Intro = () => {
   return (
-    <div className="intro-container">
-      <div className="main-home-content">
-        {/* 3D Animation Section */}
-        <img className='h-100 myphoto' src={myphoto} alt="" />
-
-        {/* Name and Title Section */}
-        <div className="intro-name-title">
+    <div className='h-[46vw] w-[100vw] relative main-home-content'>
+      <div className='flex flex-col justify-center items-center main-home-content-left'>
+        <div className='intro-name-title'>
           <p>PRAKASH SWAMI</p>
           <p>"Versatile creator of innovative, efficient, and user-focused digital solutions across web and beyond."</p>
         </div>
-
-        {/* Social Links Section */}
-        <div className="sociallogo-div">
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-            <img src={linkedin} alt="LinkedIn" className="socialLogo" />
+        <div className='sociallogo-div flex gap-5'>
+          <a href="https://www.linkedin.com/in/prakash-swami" target="_blank" rel="noopener noreferrer">
+            <img className='socialLogo' src={linkedin} alt="linkedin-logo" />
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-            <img src={github} alt="GitHub" className="socialLogo" />
+          <a href="https://leetcode.com/u/sprakash_001" target="_blank" rel="noopener noreferrer">
+            <img className='socialLogo' src={leetcode} alt="leetcode-logo" />
           </a>
-          <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer">
-            <img src={leetcode} alt="LeetCode" className="socialLogo" />
+          <a href="https://github.com/sprakash2006" target="_blank" rel="noopener noreferrer">
+            <img className='socialLogo' src={github} alt="github-logo" />
           </a>
-          <a href={cvPDF} download="PrakashSwami_CV.pdf">
-            <img src={cv} alt="Download CV" className="socialLogo" />
+          <a href={cvPDF} target="_blank" rel="noopener noreferrer">
+            <img className='socialLogo' src={cv} alt="pdf-logo" />
           </a>
         </div>
       </div>
