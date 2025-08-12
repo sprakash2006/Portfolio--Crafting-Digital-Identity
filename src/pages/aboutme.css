@@ -56,6 +56,9 @@
 }
 
 @media (max-width: 450px) {
+    .aboutMe-bg {
+        height:200vw;
+    }
     .aboutme-title {
         font-size:6vw;
         padding-top:40vw;
