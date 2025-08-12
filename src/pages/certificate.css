@@ -26,16 +26,19 @@
       padding-top:0.2vw;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
      .certificate-page {
-     padding-top:6vw;
-     padding-bottom:10vw;
+     padding-top:8vw;
+     padding-bottom:12vw;
      border-bottom:15px dotted #080010;
      }
      .certificate-section-title {
-          font-size: 10vw;
+          font-size: 12vw;
      }
      .certificate-section-description {
-          font-size:1.7vw;
+          font-size:2.2vw;
+          padding-top:0;
+          position: relative;
+          bottom:2.5vw;
      }
 }
