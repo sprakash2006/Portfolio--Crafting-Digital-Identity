@@ -6,13 +6,19 @@ import leetcode from "../assets/leetcode-logo.png";
 import cv from "../assets/cloud-download.png";
 import RotatingCuboid from "../components/RotatingCuboid";
 import cvPDF from '../assets/CVPrakashSwami.pdf';
+import myphoto from '../assets/profP.jpg'
+import useMediaQuery from '../Hooks/useMediaQuery';
 
 
 const Intro = () => {
+
+  const isMobile = useMediaQuery("(max-width: 391px)");
+
   return (
     <div className='h-[46vw] w-[100vw] relative main-home-content'>
       <div className='flex flex-col justify-center items-center main-home-content-left'>
         <div className='intro-name-title'>
+          {isMobile && <img className='h-100 myphoto' src={myphoto} alt="" />}
           <p>PRAKASH SWAMI</p>
           <p>"Versatile creator of innovative, efficient, and user-focused digital solutions across web and beyond."</p>
         </div>

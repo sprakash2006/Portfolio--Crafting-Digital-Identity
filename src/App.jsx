@@ -33,7 +33,7 @@ function App() {
     <>
       <div className='web-hero-page'>
         <div className='home-bg'>
-          {isMobile && <StarfieldAnimation />} {/* ✅ Will update on resize */}
+          {!isMobile && <StarfieldAnimation />} {/* ✅ Will update on resize */}
         </div>
         <div id='home'>
           <Header />
