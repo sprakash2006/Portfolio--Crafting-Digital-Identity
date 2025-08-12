@@ -130,3 +130,14 @@
     transform: translateX(calc(-50% - 1vw));
   }
 }
+
+
+
+@media (max-width: 450px) {
+  .certificate-image {
+  height: 30vw;
+}
+  .certificate-item {
+  width: 45vw;
+}
+}
