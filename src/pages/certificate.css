@@ -29,7 +29,7 @@
 @media (max-width: 400px) {
      .certificate-page {
      padding-top:8vw;
-     padding-bottom:12vw;
+     padding-bottom:14vw;
      border-bottom:15px dotted #080010;
      }
      .certificate-section-title {
@@ -40,5 +40,6 @@
           padding-top:0;
           position: relative;
           bottom:2.5vw;
+          padding-bottom:4vw;
      }
 }

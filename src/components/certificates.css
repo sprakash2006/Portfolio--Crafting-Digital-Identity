@@ -135,9 +135,9 @@
 
 @media (max-width: 450px) {
   .certificate-image {
-  height: 30vw;
+  height: 40vw;
 }
   .certificate-item {
-  width: 45vw;
+  width: 65vw;
 }
 }
