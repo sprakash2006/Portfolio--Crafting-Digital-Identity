@@ -42,7 +42,7 @@ export default function ProgrammingLanguagesCard() {
     {
       category: 'Databases',
       icon: '🗂️',
-      skills: ['MySQL', 'Firebase', 'PostgreSQL',]
+      skills: ['MySQL', 'Firebase', 'PostgreSQL', 'MongoDB']
     },
     {
       category: 'Tools & Technologies',
