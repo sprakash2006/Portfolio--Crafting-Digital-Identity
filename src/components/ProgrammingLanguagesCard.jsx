@@ -36,13 +36,13 @@ export default function ProgrammingLanguagesCard() {
     {
       category: 'Web Development',
       icon: '⚛️',
-      skills: ['React', 'Tailwind CSS', 'HTML5', 'CSS', 'GSAP', 'Node.js', 'Express.js', 'REST APIs']
+      skills: ['React', 'Tailwind CSS', 'HTML5', 'CSS', 'GSAP', 'Node.js', 'Express.js', 'REST APIs', 'Axios']
     },
     
     {
       category: 'Databases',
       icon: '🗂️',
-      skills: ['MySQL', 'Firebase', 'PostgreSQL']
+      skills: ['MySQL', 'Firebase', 'PostgreSQL',]
     },
     {
       category: 'Tools & Technologies',
