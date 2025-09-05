@@ -23,13 +23,13 @@ const Intro = () => {
           <p>"Versatile creator of innovative, efficient, and user-focused digital solutions across web and beyond."</p>
         </div>
         <div className='sociallogo-div flex gap-5'>
-          <a href="https://www.linkedin.com/in/prakash-swami" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/prakash-swami32431" target="_blank" rel="noopener noreferrer">
             <img className='socialLogo' src={linkedin} alt="linkedin-logo" />
           </a>
-          <a href="https://leetcode.com/u/sprakash_001" target="_blank" rel="noopener noreferrer">
+          <a href="https://leetcode.com/u/sprakash" target="_blank" rel="noopener noreferrer">
             <img className='socialLogo' src={leetcode} alt="leetcode-logo" />
           </a>
-          <a href="https://github.com/sprakash2006" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/sprakash" target="_blank" rel="noopener noreferrer">
             <img className='socialLogo' src={github} alt="github-logo" />
           </a>
           <a href={cvPDF} target="_blank" rel="noopener noreferrer">
