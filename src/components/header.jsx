@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div className='header-div'>
       <div>
-        <p className="title text-amber-400">Prakss!</p>
+        <p className="title text-amber-400">Prakss !</p>
       </div>
       
       {/* Desktop Navigation */}

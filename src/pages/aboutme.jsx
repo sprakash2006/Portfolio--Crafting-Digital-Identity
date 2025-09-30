@@ -1,7 +1,8 @@
 import React from 'react'
 import "../pages/aboutme.css"
 import dev from "../assets/video/developer-skills.webm"
-import myphoto from '../assets/profP.jpg'
+import myphoto from '../assets/myimg1.jpg'
+
 import useMediaQuery from '../Hooks/useMediaQuery';
 
 

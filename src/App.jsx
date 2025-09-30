@@ -31,19 +31,25 @@ function App() {
 
   return (
     <>
-      <div className='web-hero-page'>
-        <div className='home-bg'>
+      <div className='web-hero-page' style={{ position: 'relative' }}>
+        <div className='home-bg' style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
           {!isMobile && <StarfieldAnimation />} {/* ✅ Will update on resize */}
         </div>
-        <div id='home'>
+        <div id='home' style={{ position: 'relative', zIndex: 1 }}>
           <Header />
           <Home />
         </div>
       </div>
 
-      <div id='intro'>
-        <About />
+      <div id='intro' style={{ position: 'relative' }}>
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
+          {!isMobile && <StarfieldAnimation />}
+        </div>
+        <div style={{ position: 'relative', zIndex: 1 }}>
+          <About />
+        </div>
       </div>
+
       <div id='stack'>
         <Skills />
       </div>
