@@ -5,11 +5,15 @@
   align-items: center;
 }
 .project-page {
-  column-count: 3;
-  gap:0.5rem;
+  display:flex;
+  justify-content:center;
+  align-items: start;
+  gap:1rem;
   padding: 3rem 7rem;
   position: relative;
-  padding-bottom:12.25vw;
+  padding-bottom:17.5vw;
+  flex-wrap: wrap;
+  padding-top:5vw;
 }
 
 

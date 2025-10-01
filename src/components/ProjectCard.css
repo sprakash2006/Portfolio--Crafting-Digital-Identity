@@ -1,11 +1,17 @@
 .proj-card {
-    display:inline-block;
+    display:flex;
+    flex-direction:column;
     color:white;
     position: relative;
+    padding:10px 0 0 0;
     width: 100%;
     overflow: hidden;
+    min-height:100%;
+    max-height:100%;
+    max-width:26vw;
+    min-width:26vw;
     border-radius: 15px;
-    background: linear-gradient(145deg, #1a1a2e, #16213e);
+    background: linear-gradient(145deg, #1a1a2e, #010511);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
     border: 1.5px solid rgba(255, 255, 255, 0.1);
@@ -18,32 +24,15 @@
     width:100%;
     display:flex;
     justify-content: center;
-    gap:1.2rem;
-    padding:0.7rem;
-    background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding:0.5rem;
     position: relative;
     align-items:center;
-}
-.proj-logo {
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow:3px 3px 8px rgba(0, 0, 0, 0.416),
-    -3px -3px 8px rgba(0, 0, 0, 0.415);
-    flex-shrink: 0;
-    font-size: 22.5px;
-    margin-left:0.6rem;
 }
 .proj-title {
     color: #ffffff;
     font-size: 1.4rem;
     font-weight: 600;
+    padding-left:1rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
     flex: 1;
     margin: 0;
@@ -58,26 +47,25 @@
     position: relative;
 }
 .proj-description {
-    font-size:1.25rem;
+    font-size:0.85rem;
     line-height:98%;
     font-weight:100;
-    padding-bottom:1rem;
-    font-family: "Zain", sans-serif;
-    font-weight: 100;
-    font-style:italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing:1px;
+    line-height:21px;
+    padding-bottom:15px;
 }
 .proj-skill-section {
     display:flex;
     flex-wrap: wrap;
-    gap: 0.75rem;
+    gap: 0.5rem;
     margin-top:0.5rem;
-    padding-left:1rem;
 }
 .proj-skill-capsule {
     color: #ffffff;
     padding: 0.4rem 1rem;
     border-radius: 25px;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     font-weight: 500;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
@@ -127,6 +115,32 @@
     left: 100%;
 }
 
+.proj-skill-capsule-link-url {
+    color: #ffffff;
+    padding: 0.4rem 0.5rem;
+    border-radius: 25px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+.proj-skill-capsule-link-url::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+.proj-skill-capsule-link-url:hover::before {
+    left: 100%;
+}
+
 
 @media (max-width: 450px) {
     .proj-card {
@@ -159,4 +173,71 @@
         justify-content: center;
         align-items: center;
     }
+}
+
+.horizantal-line {
+    width:23vw;
+    height:1px;
+    margin-left:1.5rem;
+    margin-top:2px;
+    background-color:rgba(255, 255, 255, 0.082);
+    
+}
+
+
+.proj-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1rem 0;
+  justify-content: center;
+  margin-bottom:3vw;
+}
+
+.proj-tab {
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.proj-tab:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.proj-tab.active {
+  background: linear-gradient(145deg, #1a1a2e, #010511);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+/* ✅ Container for 3-column layout */
+.proj-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+/* ✅ Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .proj-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .proj-container {
+    grid-template-columns: 1fr;
+  }
+  .proj-card {
+    max-width: 100%;
+    min-width: 100%;
+  }
 }
