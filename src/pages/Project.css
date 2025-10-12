@@ -35,16 +35,16 @@
   font-weight: 400;
   font-style: normal;
   font-size:1.25rem;
-  position:absolute;
+  position:relative;
   bottom:2vw;
-  right:33vw;
+  left:12vw;
 }
 
 @media (max-width: 450px) {
   .project-page {
     column-count: 1;
     gap:1rem;
-    padding:4rem 4rem;
+    padding:0;
     padding-bottom:7.5rem;
     display:flex;
     flex-direction: column;
@@ -53,13 +53,13 @@
     
   }
   .project-page-title {
-    font-size:4rem;
-    padding-top:18vw;
+    font-size:4.5rem;
+    padding-top:25vw;
     padding-bottom:2vw;
   }
   .project-page-subheading {
     font-size:0.65rem;
-    right:15vw;
+    right:20vw;
     bottom:0;
   }
 }
