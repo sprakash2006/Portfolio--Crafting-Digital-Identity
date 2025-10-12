@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import Header from "./components/header";
-import StarfieldAnimation from '../src/components/StarfieldAnimation';
 import Home from "./pages/intro.jsx";
 import About from '../src/pages/aboutme';
 import Skills from '../src/pages/skills';
@@ -31,10 +30,7 @@ function App() {
 
   return (
     <>
-      <div className='web-hero-page' style={{ position: 'relative' }}>
-        <div className='home-bg' style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
-          {!isMobile && <StarfieldAnimation />} {/* ✅ Will update on resize */}
-        </div>
+      <div className='web-hero-page bg-black' style={{ position: 'relative' }}>
         <div id='home' style={{ position: 'relative', zIndex: 1 }}>
           <Header />
           <Home />
@@ -42,9 +38,6 @@ function App() {
       </div>
 
       <div id='intro' style={{ position: 'relative' }}>
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
-          {!isMobile && <StarfieldAnimation />}
-        </div>
         <div style={{ position: 'relative', zIndex: 1 }}>
           <About />
         </div>
