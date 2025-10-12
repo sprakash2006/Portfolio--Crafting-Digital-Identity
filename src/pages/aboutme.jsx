@@ -8,7 +8,7 @@ import useMediaQuery from '../Hooks/useMediaQuery';
 
 const aboutme = () => {
 
-  const isMobile = useMediaQuery("(max-width: 391px)");
+  const isMobile = useMediaQuery("(max-width: 450px)");
 
   return (
     <div className='aboutMe-bg'>
