@@ -43,11 +43,11 @@
 
 .name {
     color:white;
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight:700;
-  font-style: normal;
-  font-size:1.95em;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-style: normal;
+    font-size:1.95em;
 }
 
 .star-pattern {
@@ -57,12 +57,12 @@
 
 @media (max-width: 450px) {
     .aboutMe-bg {
-        height:155vw;
+        height:150vw;
     }
     .aboutme-title {
-        font-size:6vw;
-        padding-top:15vw;
-        padding-left:27.5vw;
+        font-size:8vw;
+        padding-top:20vw;
+        padding-left:22vw;
     }
 
     .about-me-main-content {
@@ -72,7 +72,7 @@
 
     .myphoto {
         height:65vw;
-        border:3px solid #7961f4;
+        border:3px solid #330063;
         margin-top:10vw;
     }
 
@@ -80,17 +80,17 @@
         font-size:1rem;
         text-align: center;
         padding-left:0vw;
-        margin-top:5vw;
+        margin-top:7.5vw;
     }
 
     .name {
-    font-size:2.5rem;
+        font-size:2.5rem;
     }
 
     .star-pattern {
         font-size:6vw;
         margin-top:5vw;
         margin-bottom:20px;
-}
+    }
 
 }
