@@ -143,27 +143,22 @@
 
 
 @media (max-width: 450px) {
-    .proj-card {
-        width: 125%;
-    }
-    .proj-logo {
-        width: 30px;
-        height: 30px;
-        font-size: 15px;
-        margin-left:0.6rem;
+    .proj-container {
+        width:80vw;
     }
     .proj-title {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .proj-description {
-        font-size:0.9rem;
-        line-height:100%;
+        font-size:0.85rem;
+        line-height:125%;
         font-weight:100;
         padding-bottom:0;
     }
     .proj-skill-section {
-        gap: 0.25rem;
+        gap: 0.3rem;
         padding-left:0rem;
+        margin-top:4vw;
         justify-content: flex-start;
         align-items: center;
     }
@@ -173,7 +168,12 @@
         justify-content: center;
         align-items: center;
     }
+    .proj-skill-capsule-link-url {
+        font-size: 0.75rem;
+    }
 }
+
+
 
 .horizantal-line {
     width:23vw;
@@ -183,8 +183,6 @@
     background-color:rgba(255, 255, 255, 0.082);
     
 }
-
-
 .proj-tabs {
   display: flex;
   flex-wrap: wrap;
@@ -240,4 +238,29 @@
     max-width: 100%;
     min-width: 100%;
   }
+}
+
+
+@media (max-width: 450px) {
+    .proj-tabs {
+    gap: 0.35rem;
+    margin: 0;
+    margin-top:15vw;
+    justify-content: center;
+    margin-bottom:6vw;
+    margin-right:3vw;
+    margin-left:3vw;
+}
+    .proj-tab {
+        padding: 0.5rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        margin-bottom:2vw;
+    }
+    .horizantal-line {
+        width:72vw;
+        height:1px;
+        margin-left:1rem;
+        
+    }
 }
