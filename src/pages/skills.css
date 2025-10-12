@@ -5,7 +5,6 @@
 }
 .skills-title {
   font-size:4.5vw;
-  margin-left:40%;
   font-weight: 600;
   color: #ffffff;
   text-align: center;
@@ -14,9 +13,13 @@
     0 0 6px rgba(255, 255, 255, 0.2),
     0 0 10px rgba(0, 255, 153, 0.3),
     0 0 20px rgba(0, 255, 120, 0.4),
-    0 0 40px rgba(100, 255, 100, 0.3);
-  animation: soft-glow 1.5s ease-in-out infinite alternate;
-  padding-top:12vw;
+    0 0 40px rgba(100, 123, 255, 0.3);
+  animation: soft-glow 0.5s ease-in-out infinite alternate;
+  padding-top:9vw;
+  padding-left:4vw;
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   
 }
 
@@ -27,9 +30,9 @@
   }
   .skills-title {
     font-size:11vw;
-    margin-left:8%;
-    margin-top:10%;
-    padding-bottom:5vw;
+    margin-left:0;
+    margin-top:5%;
+    padding-bottom:0;
 
   }
 }
