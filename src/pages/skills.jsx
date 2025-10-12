@@ -6,7 +6,7 @@ import MovingStrip from '../components/movingStripe'
 
 const Skills = () => {
   return (
-    <div className='skill-page border-t-2 border-[#ff0000]'>
+    <div className='skill-page border-t-2 border-[#ffd00073] border-dashed'>
       <p className='skills-title'>Tech&nbsp;Stack&nbsp;</p>
       <div className='skill-content'>
         <ProgrammingLanguagesCard />
