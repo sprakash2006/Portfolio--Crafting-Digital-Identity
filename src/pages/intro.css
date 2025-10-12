@@ -15,8 +15,6 @@
   clip-path:circle(50% at 50% 50%)
 
 }
-
-
 .home-name {
     padding:10px 10px;
     font-family: "Playwrite AU QLD", cursive;
@@ -78,14 +76,15 @@
 
 }
 
-@media (max-width: 550px) {
+@media (max-width: 450px) {
 
   .main-home-content {
-  height:180vw;
-  bottom:10vw;
+  height:100%;
+  margin-top:10vw;
+  padding-bottom:12vw;
   }
   .sociallogo-div {
-    margin-top:3vw;
+    margin-top:2vw;
     bottom:0;
   }
 
@@ -96,15 +95,15 @@
   gap:0.9rem;
   }
   .intro-name-title {
-    padding-top:12vw;
+    padding-top:5vw;
   }
 
   .intro-name-title p:nth-of-type(1) {
-    font-size:8.5vw;
+    font-size:9vw;
     padding-top:10vw;
   }
 
   .intro-name-title p:nth-of-type(2) {
-    font-size:0.5rem;
+    font-size:0.7rem;
   }
 }
