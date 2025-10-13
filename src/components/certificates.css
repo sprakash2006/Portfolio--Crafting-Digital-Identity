@@ -134,10 +134,90 @@
 
 
 @media (max-width: 450px) {
-  .certificate-image {
-  height: 50vw;
-}
+  .certificates-main-container {
+    gap: 30vw;
+  }
+  .certificates-container1, .certificates-container2 {
+    gap: 30vw;
+    padding-top: 5vw;
+    padding-bottom:5vw;
+  }
+
   .certificate-item {
-  width: 80vw;
-}
+    border-radius: 0;
+    padding-top: 0.5vw;
+  }
+
+  /* Certificate hover effect - scale and blur */
+  .certificate-item:hover {
+    transform: scale(1.02);
+  }
+
+  .certificate-item:hover .certificate-image {
+    filter: blur(2px);
+  }
+
+  /* Image container for overlay positioning */
+  .certificate-image-container {
+    position: relative;
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .certificate-image {
+    height: 65vw;
+    border-radius: 3px;
+    transition: filter 0.3s ease;
+  }
+
+  /* Credential overlay */
+  .credential-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+  }
+
+  /* Show overlay on hover */
+  .certificate-item:hover .credential-overlay {
+    opacity: 1;
+    
+  }
+
+  /* Credential button styling */
+  .credential-button {
+    border: none;
+    border-radius: 25px;
+    padding: 12px 24px;
+    color: rgb(0, 0, 0);
+    font-family: "Libertinus Serif", serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .credential-button:hover {
+    transform: translateY(-2px);
+  }
+
+  /* Arrow styling */
+  .arrow {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+    rotate:-10deg;
+  }
+
+  .credential-button:hover .arrow {
+    transform: translateX(4px);
+  }
 }

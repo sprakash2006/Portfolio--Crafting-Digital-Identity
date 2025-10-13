@@ -13,7 +13,22 @@
 .myimgs {
   clip-path:circle(50% at 50% 50%);
   height:270px;
+  animation: moveRight 1.5s ease-in-out infinite;
+  position:relative;
 }
+
+@keyframes moveRight {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .home-myImage {
   clip-path:circle(50% at 50% 50%)
 
@@ -47,8 +62,8 @@
 }
 
 .socialLogo:hover {
-  box-shadow:3px 3px 20px #ffffff9e,
-  -3px -3px 20px #ffffff9e;
+  box-shadow:1px 1px 20px rgb(256,256,256,0.4),
+  -1px -1px 20px rgba(256,256,256,0.4);
   border:none;
 }
 

@@ -38,7 +38,7 @@
   font-weight: 700;
   font-style: normal;
   font-size: clamp(1rem, 2vw, 1.5rem);
-  gap:2vw;
+  gap: 2vw;
 }
 
 .desktop-nav a {
@@ -49,7 +49,7 @@
 }
 
 .desktop-nav a:hover {
-  border-bottom:1px dashed red;
+  border-bottom: 1px dashed red;
   transform: translateY(-2px);
 }
 
@@ -102,7 +102,7 @@
 
 /* Mobile Navigation */
 .mobile-nav {
-  display: none;
+  display: flex;
   position: absolute;
   top: 100%;
   left: 0;
@@ -119,12 +119,18 @@
   opacity: 0;
   transform: translateY(-10px);
   transition: all 0.3s ease;
-  height:71vw;
+  height: 50vh;
+
+  /* ✅ Fix: Disable clicks when hidden */
+  pointer-events: none;
 }
 
 .mobile-nav.open {
   opacity: 1;
   transform: translateY(0);
+
+  /* ✅ Fix: Enable clicks when open */
+  pointer-events: auto;
 }
 
 .mobile-nav a {
@@ -148,7 +154,7 @@
     width: 95vw;
     padding: 0.75rem 1.5rem;
   }
-  
+
   .desktop-nav {
     gap: 1rem;
     font-size: 1.25rem;
@@ -160,15 +166,15 @@
   .desktop-nav {
     display: none;
   }
-  
+
   .mobile-menu-btn {
     display: block;
   }
-  
+
   .mobile-nav {
     display: flex;
   }
-  
+
   .header-div {
     padding: 1rem 1.5rem;
     top: 1.5rem;
@@ -181,14 +187,14 @@
     width: 85vw;
     padding: 0.75rem 1rem;
     top: 2rem;
-    height:12vw;
+    height: 12vw;
     border-radius: 10px;
   }
-  
+
   .title {
     font-size: 1.5rem;
   }
-  
+
   .mobile-nav a {
     font-size: 1.4rem;
     padding: 0.5rem 0.75rem;
@@ -200,11 +206,11 @@
   .header-div {
     padding: 0.5rem 0.75rem;
   }
-  
+
   .title {
     font-size: 1.25rem;
   }
-  
+
   .hamburger {
     width: 20px;
     height: 15px;
