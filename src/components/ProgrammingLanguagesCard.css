@@ -124,32 +124,35 @@
   transition-duration: 0.1s;
 }
 
+
+
+
 @media (max-width: 450px) {
     .lang-skill-card {
       padding: 1.25rem;
-      max-width:70vw;
-      min-width:80vw;
-      margin-bottom:2.5vw;
+      max-width:90vw;
+      min-width:90vw;
+      margin-bottom:3vw;
     }
     .lang-card-header {
       margin-bottom: 0.9rem;
     }
     .lang-card-icon {
-      font-size: 1rem;
+      font-size: 1.25rem;
     }
     .lang-card-title {
       font-size: 1rem;
     }
     .lang-skills-grid {
-      gap: 0.5rem;
+      gap: 0.4rem;
       padding-top:0.4vw;
       padding-left:1rem;
     }
 
     .lang-skill-tag {
       border-radius: 1rem;
-      padding: 0.3rem 0.7rem;
-      font-size: 0.75rem;
+      padding: 0.25rem 0.6rem;
+      font-size: 0.7rem;
       font-weight: 400;
     }
 }
@@ -166,14 +169,6 @@
     transform: translateY(0);
   }
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -199,11 +194,13 @@
 
 @media (max-width: 450px) {
 .lang-dashboard-container {
+    padding:0 0;
+    padding-left:5vw;
     padding-top:10vw;
-    padding-bottom:15vw;
+    padding-bottom:25vw;
 }
 .lang-skills-grid-container {
-    gap:0.5vw;
+    gap:0;
     column-count:1;
 }
 }

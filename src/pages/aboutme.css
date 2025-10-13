@@ -57,17 +57,18 @@
 
 @media (max-width: 450px) {
     .aboutMe-bg {
-        height:150vw;
+        height:38rem;
     }
     .aboutme-title {
-        font-size:8vw;
-        padding-top:20vw;
-        padding-left:22vw;
+        font-size:9vw;
+        padding-top:25vw;
+        padding-left:18vw;
     }
 
     .about-me-main-content {
         flex-direction:column;
-        padding-top:5vw;
+        padding-top:0;
+        margin-top:1em;
     }
 
     .myphoto {
@@ -77,7 +78,7 @@
     }
 
     .about-me-text {
-        font-size:1rem;
+        font-size:0.85rem;
         text-align: center;
         padding-left:0vw;
         margin-top:7.5vw;

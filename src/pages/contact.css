@@ -408,9 +408,10 @@
   }
   .contact-details-name {
     font-size:10vw;
+    padding-top:6vw;
   }
   .contact-social-card {
-    width:70vw;
+    width:95vw;
     background: rgba(30, 41, 59, 0.4);
     backdrop-filter: blur(12px);
     border: 1px solid rgba(51, 65, 85, 0.5);

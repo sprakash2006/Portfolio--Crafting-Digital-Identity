@@ -35,9 +35,6 @@
   font-weight: 400;
   font-style: normal;
   font-size:1.25rem;
-  position:relative;
-  bottom:2vw;
-  left:12vw;
 }
 
 @media (max-width: 450px) {
@@ -59,7 +56,6 @@
   }
   .project-page-subheading {
     font-size:0.65rem;
-    right:20vw;
-    bottom:0;
+    margin-left:43vw;
   }
 }

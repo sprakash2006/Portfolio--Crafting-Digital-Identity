@@ -79,18 +79,17 @@
 @media (max-width: 450px) {
 
   .main-home-content {
-  height:100%;
-  margin-top:10vw;
-  padding-bottom:12vw;
+  height:100vh;
+  margin-top:0;
+  padding-bottom:5vw;
   }
   .sociallogo-div {
     margin-top:2vw;
     bottom:0;
   }
-
   .socialLogo {
-  height:9vw;
-  border:2.5px solid #ffffff2d;
+  height:11vw;
+  border:1.5px solid #ffffff2d;
   margin-top:2vw;
   gap:0.9rem;
   }
@@ -104,6 +103,6 @@
   }
 
   .intro-name-title p:nth-of-type(2) {
-    font-size:0.7rem;
+    font-size:0.58rem;
   }
 }
