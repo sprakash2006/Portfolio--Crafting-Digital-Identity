@@ -10,7 +10,10 @@
   justify-content:center;
   align-items:center;
 }
-
+.myimgs {
+  clip-path:circle(50% at 50% 50%);
+  height:270px;
+}
 .home-myImage {
   clip-path:circle(50% at 50% 50%)
 
@@ -48,7 +51,6 @@
   -3px -3px 20px #ffffff9e;
   border:none;
 }
-
 
 .intro-name-title {
   display:flex;

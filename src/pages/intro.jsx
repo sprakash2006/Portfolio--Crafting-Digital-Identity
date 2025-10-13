@@ -17,7 +17,7 @@ const Intro = () => {
     <div className='h-[46vw] w-[100vw] relative main-home-content'>
       <div className='flex flex-col justify-center items-center main-home-content-left'>
         <div className='intro-name-title'>
-          {isMobile && <img className='h-100 myphoto' src={myphoto} alt="" />}
+          {isMobile && <img className='myimgs' src={myphoto} alt="" />}
           <p>PRAKASH SWAMI</p>
           <p>"Versatile creator of innovative, efficient, and user-focused digital solutions across web and beyond."</p>
         </div>
