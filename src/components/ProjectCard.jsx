@@ -19,7 +19,7 @@ const ProjectCard = () => {
       id: 2,
       logo: "💰",
       projectTitle: "Career Craftly - Student Club",
-      techTools: ["React", "Firebase", "TailwindCss"],
+      techTools: ["React", "Firebase", "Tailwind"],
       description: "It is a website that showcases the club’s activities, members, and updates, while enabling students to join and admins to manage content dynamically.",
       link: "https://github.com/sprakash2006/C2C--Student-Community-Club.git",
       type: ["WEBSITE"]
@@ -28,7 +28,7 @@ const ProjectCard = () => {
       id: 3,
       logo: "💰",
       projectTitle: "AyurSutra - Center Management",
-      techTools: ["React", "Supabase", "TailwindCss", "Express"],
+      techTools: ["React", "Supabase", "Tailwind", "Express"],
       description: "Manage appointments, schedule therapies, track patient progress, and maintain secure digital records—all from the center’s website. Ensure smooth, personalized care for every patient.",
       link: "https://github.com/sprakash2006/AyurSutra-Center.git",
       type: ["WEBSITE"]   // 🔹 Multiple categories
@@ -37,7 +37,7 @@ const ProjectCard = () => {
       id: 4,
       logo: "💰",
       projectTitle: "AyurSutra - User Management",
-      techTools: ["React", "Supabase", "TailwindCss", "Express"],
+      techTools: ["React", "Supabase", "Tailwind", "Express"],
       description: "A responsive platform for patients to book Panchakarma therapies, track progress, receive notifications and access resources.",
       link: "https://github.com/sprakash2006/Ayursutra-User.git",
       type: ["WEBSITE"]   // 🔹 Multiple categories
