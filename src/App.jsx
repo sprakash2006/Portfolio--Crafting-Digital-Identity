@@ -20,13 +20,13 @@ function App() {
     }, 2000);
   }, []);
 
-  if (loading) {
-    return (
-      <div className="loading-container">
-        <Loader />
-      </div>
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <div className="loading-container">
+  //       <Loader />
+  //     </div>
+  //   );
+  // }
 
   return (
     <>

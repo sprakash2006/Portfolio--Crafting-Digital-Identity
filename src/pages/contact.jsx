@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send, Instagram, Linkedin, Github, FileUser } from 'lucide-react';
 import { SiLeetcode } from "react-icons/si";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './contact.css';
 import cvPDF from '../assets/CVPrakashSwami.pdf';
 
@@ -8,13 +10,47 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    subject: '',
     message: ''
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Message sent! Check console for form data.');
+
+    const formEndpoint = "https://submit-form.com/QDhviCVUd";
+
+    try {
+      const response = await fetch(formEndpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast.success("Message sent successfully!", {
+          position: "bottom-left",
+          autoClose: 2000,
+          theme: "dark",
+        });
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        toast.error("Something went wrong. Please try again.", {
+          position: "bottom-left",
+          autoClose: 2000,
+          theme: "dark",
+        });
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast.error("Failed to send message. Check your connection.", {
+        position: "bottom-left",
+        autoClose: 2000,
+        theme: "dark",
+      });
+    }
   };
 
   const handleChange = (e) => {
@@ -26,20 +62,21 @@ export default function ContactPage() {
     { icon: Phone, title: 'Contact', detail: '+91 8767690131' },
     { icon: Mail, title: 'Email us', detail: 'prakashswami150569@gmail.com' }
   ];
-const socialMedia = [
-  { icon: Linkedin, link: "https://www.linkedin.com/in/prakash-swami/" },
-  {icon: SiLeetcode, link: "https://leetcode.com/u/sprakash_001/"},
-  { icon: Github, link: "https://github.com/sprakash2006" },
-  {icon: FileUser, link: cvPDF},
-  { icon: Instagram, link: "https://www.instagram.com/prakash.x45/" }
-];
+
+  const socialMedia = [
+    { icon: Linkedin, link: "https://www.linkedin.com/in/prakash-swami/" },
+    { icon: SiLeetcode, link: "https://leetcode.com/u/sprakash_001/" },
+    { icon: Github, link: "https://github.com/sprakash2006" },
+    { icon: FileUser, link: cvPDF },
+    { icon: Instagram, link: "https://www.instagram.com/prakash.x45/" }
+  ];
 
   return (
     <div className="contact-container">
       <div className="contact-wrapper">
         <p className="contact-details-name">Get in Touch !</p>
         <div className="contact-grid">
-          {/* Left sidebar - Contact Info */}
+          {/* Left sidebar */}
           <div className="contact-sidebar">
             {contactInfo.map((item, idx) => (
               <div key={idx} className="contact-card">
@@ -54,25 +91,30 @@ const socialMedia = [
                 </div>
               </div>
             ))}
-              <div className="contact-social-card">
-                {socialMedia.map((item) => (
-                  <div className="contact-social-card-content" key={item.icon}>
-                    <div className="contact-social-icon-wrapper" onClick={() => window.open(item.link, "_blank")}>
-                      <item.icon className="contact-social-icon" />
-                    </div>
+            <div className="contact-social-card">
+              {socialMedia.map((item) => (
+                <div className="contact-social-card-content" key={item.icon}>
+                  <div
+                    className="contact-social-icon-wrapper"
+                    onClick={() => window.open(item.link, "_blank")}
+                  >
+                    <item.icon className="contact-social-icon" />
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Right side - Contact Form */}
           <div className="contact-form-section">
             <div className="contact-form-card">
               <div className="contact-form-header">
-                <p className="contact-form-description">Have a project in mind or need help with web development or data analytics? Drop your details below, and I’ll get in touch soon to discuss how we can work together.</p>
+                <p className="contact-form-description">
+                  Have a project in mind or need help with web development or data analytics? Drop your details below, and I’ll get in touch soon to discuss how we can work together.
+                </p>
               </div>
 
-              <div className="contact-form-fields">
+              <form onSubmit={handleSubmit} className="contact-form-fields">
                 <div className="contact-form-row">
                   <div className="contact-form-group">
                     <input
@@ -82,6 +124,7 @@ const socialMedia = [
                       onChange={handleChange}
                       placeholder="Your Full Name"
                       className="contact-input"
+                      required
                     />
                   </div>
                   <div className="contact-form-group">
@@ -92,10 +135,11 @@ const socialMedia = [
                       onChange={handleChange}
                       placeholder="Your Email"
                       className="contact-input"
+                      required
                     />
                   </div>
                 </div>
-              
+
                 <div className="contact-form-group">
                   <input
                     type="text"
@@ -115,18 +159,22 @@ const socialMedia = [
                     placeholder="Message..."
                     rows="4"
                     className="contact-textarea"
+                    required
                   ></textarea>
                 </div>
 
-                <button onClick={handleSubmit} className="contact-submit-btn">
+                <button type="submit" className="contact-submit-btn">
                   <Send className="contact-btn-icon" />
                   Send Message
                 </button>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
+
+      {/* ✅ Toast Container */}
+      <ToastContainer />
     </div>
   );
 }
