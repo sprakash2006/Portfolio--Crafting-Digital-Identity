@@ -36,7 +36,7 @@ export default function ProgrammingLanguagesCard() {
     {
       category: 'Web Development',
       icon: '⚛️',
-      skills: ['React', 'Tailwind CSS', 'HTML5', 'CSS', 'GSAP', 'Node.js', 'Express.js', 'REST APIs', 'Axios']
+      skills: ['React','React Native', 'Tailwind CSS', 'HTML5', 'CSS', 'GSAP', 'Node.js', 'Express.js', 'REST APIs', 'Axios']
     },
     
     {
