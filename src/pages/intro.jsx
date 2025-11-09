@@ -4,7 +4,7 @@ import linkedin from "../assets/linkedin-logo.png";
 import github from "../assets/github-logo.png";
 import leetcode from "../assets/leetcode-logo.png";
 import cv from "../assets/cloud-download.png";
-import cvPDF from '../assets/CVPrakashSwami.pdf';
+import cvPDF from 'public/PRAKASHSWAMICV.pdf';
 import myphoto from '../assets/myimg1.jpg';
 import TextAnimation from '../components/textAnimation'
 import useMediaQuery from '../Hooks/useMediaQuery';
